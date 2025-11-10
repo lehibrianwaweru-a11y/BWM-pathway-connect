@@ -1,0 +1,27 @@
+
+:root{
+  --bwmgreen:#0e8a3a;
+  --bwmgold:#d4af37;
+  --bg:#071012;
+  --card:#0b0c0d;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#040809, #071012);color:#e6e6e6}
+.container{max-width:1100px;margin:24px auto;padding:16px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--bwmgreen),#053a1a);display:flex;align-items:center;justify-content:center}
+h1{margin:0;font-size:20px}
+.nav{display:flex;gap:8px}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(212,175,55,0.14);background:#071;cursor:pointer}
+.card{background:linear-gradient(180deg,rgba(10,12,10,0.45),rgba(8,9,7,0.3));border:1px solid rgba(212,175,55,0.06);padding:16px;border-radius:10px}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:16px;margin-top:16px}
+.course-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.course{padding:12px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+.footer{margin-top:20px;color:#9aa0a6;font-size:13px;text-align:center}
+textarea{width:100%;background:#081014;color:#e6e6e6;border-radius:6px;padding:8px;border:1px solid #122}
+.progress{height:10px;background:#0c0d0e;border-radius:6px;overflow:hidden}
+.progress > div{height:100%;background:linear-gradient(90deg,var(--bwmgreen),#2fa45b)}
+.small{font-size:13px;color:#adb3b6}
+.music-toggle{background:transparent;border:1px solid rgba(212,175,55,0.12);padding:6px 10px;border-radius:8px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
